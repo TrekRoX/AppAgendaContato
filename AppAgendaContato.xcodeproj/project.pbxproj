@@ -41,18 +41,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		420D2799232C6FCD00C50E43 /* imagens */ = {
+		420D279A232C706F00C50E43 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
 				420D2797232C6F6B00C50E43 /* lista.png */,
 			);
-			path = imagens;
+			path = imgs;
 			sourceTree = "<group>";
 		};
 		9D6B9299232C530200C2E339 = {
 			isa = PBXGroup;
 			children = (
-				420D2799232C6FCD00C50E43 /* imagens */,
 				9D6B92A4232C530200C2E339 /* AppAgendaContato */,
 				9D6B92A3232C530200C2E339 /* Products */,
 			);
@@ -69,6 +68,7 @@
 		9D6B92A4232C530200C2E339 /* AppAgendaContato */ = {
 			isa = PBXGroup;
 			children = (
+				420D279A232C706F00C50E43 /* imgs */,
 				9D6B92B9232C642900C2E339 /* icoContato.png */,
 				9D6B92B7232C59C100C2E339 /* agendamento-png.png */,
 				9D6B92A5232C530200C2E339 /* AppDelegate.swift */,
