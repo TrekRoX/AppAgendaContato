@@ -12,6 +12,8 @@
 		9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92A9232C530200C2E339 /* Main.storyboard */; };
 		9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92AC232C530500C2E339 /* Assets.xcassets */; };
 		9D6B92B0232C530500C2E339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92AE232C530500C2E339 /* LaunchScreen.storyboard */; };
+		9D6B92B8232C59C100C2E339 /* agendamento-png.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92B7232C59C100C2E339 /* agendamento-png.png */; };
+		9D6B92BA232C642A00C2E339 /* icoContato.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92B9232C642900C2E339 /* icoContato.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9D6B92AC232C530500C2E339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D6B92AF232C530500C2E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6B92B1232C530500C2E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D6B92B7232C59C100C2E339 /* agendamento-png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "agendamento-png.png"; path = "../../agendamento-png.png"; sourceTree = "<group>"; };
+		9D6B92B9232C642900C2E339 /* icoContato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icoContato.png; path = ../../icoContato.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		9D6B92A4232C530200C2E339 /* AppAgendaContato */ = {
 			isa = PBXGroup;
 			children = (
+				9D6B92B9232C642900C2E339 /* icoContato.png */,
+				9D6B92B7232C59C100C2E339 /* agendamento-png.png */,
 				9D6B92A5232C530200C2E339 /* AppDelegate.swift */,
 				9D6B92A7232C530200C2E339 /* ViewController.swift */,
 				9D6B92A9232C530200C2E339 /* Main.storyboard */,
@@ -124,7 +130,9 @@
 			files = (
 				9D6B92B0232C530500C2E339 /* LaunchScreen.storyboard in Resources */,
 				9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */,
+				9D6B92BA232C642A00C2E339 /* icoContato.png in Resources */,
 				9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */,
+				9D6B92B8232C59C100C2E339 /* agendamento-png.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
