@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		420D2798232C6F6C00C50E43 /* lista.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D2797232C6F6B00C50E43 /* lista.png */; };
+		420D279C232D66E900C50E43 /* add-icon-614x460.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D279B232D66E900C50E43 /* add-icon-614x460.png */; };
 		9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B92A5232C530200C2E339 /* AppDelegate.swift */; };
 		9D6B92A8232C530200C2E339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B92A7232C530200C2E339 /* ViewController.swift */; };
 		9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92A9232C530200C2E339 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		420D2797232C6F6B00C50E43 /* lista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lista.png; path = AppAgendaContato/imgs/lista.png; sourceTree = SOURCE_ROOT; };
+		420D279B232D66E900C50E43 /* add-icon-614x460.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-icon-614x460.png"; path = "AppAgendaContato/imgs/add-icon-614x460.png"; sourceTree = SOURCE_ROOT; };
 		9D6B92A2232C530200C2E339 /* AppAgendaContato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAgendaContato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6B92A5232C530200C2E339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D6B92A7232C530200C2E339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		420D279A232C706F00C50E43 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				420D279B232D66E900C50E43 /* add-icon-614x460.png */,
 				9D6B92BB232C71FD00C2E339 /* agendamento.png */,
 				420D2797232C6F6B00C50E43 /* lista.png */,
 			);
@@ -142,6 +145,7 @@
 				9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */,
 				9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */,
 				9D6B92B8232C59C100C2E339 /* agendamento-png.png in Resources */,
+				420D279C232D66E900C50E43 /* add-icon-614x460.png in Resources */,
 				420D2798232C6F6C00C50E43 /* lista.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
