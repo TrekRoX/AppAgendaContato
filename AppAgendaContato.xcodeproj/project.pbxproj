@@ -26,7 +26,7 @@
 		9D6B92AF232C530500C2E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6B92B1232C530500C2E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6B92B7232C59C100C2E339 /* agendamento-png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "agendamento-png.png"; path = "../../agendamento-png.png"; sourceTree = "<group>"; };
-		9D6B92BB232C71FD00C2E339 /* agendamento-png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "agendamento-png.png"; path = "AppAgendaContato/imgs/agendamento-png.png"; sourceTree = SOURCE_ROOT; };
+		9D6B92BB232C71FD00C2E339 /* agendamento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = agendamento.png; path = AppAgendaContato/imgs/agendamento.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 		420D279A232C706F00C50E43 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
-				9D6B92BB232C71FD00C2E339 /* agendamento-png.png */,
+				9D6B92BB232C71FD00C2E339 /* agendamento.png */,
 				420D2797232C6F6B00C50E43 /* lista.png */,
 			);
 			path = imgs;
