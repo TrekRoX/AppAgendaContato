@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42078B192368F719007AAEA0 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42078B172368F719007AAEA0 /* Database.xcdatamodeld */; };
+		42078B1B2369143F007AAEA0 /* agendamento.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92BB232C71FD00C2E339 /* agendamento.png */; };
 		420D2798232C6F6C00C50E43 /* lista.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D2797232C6F6B00C50E43 /* lista.png */; };
 		420D279C232D66E900C50E43 /* add-icon-614x460.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D279B232D66E900C50E43 /* add-icon-614x460.png */; };
 		9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B92A5232C530200C2E339 /* AppDelegate.swift */; };
@@ -14,10 +16,10 @@
 		9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92A9232C530200C2E339 /* Main.storyboard */; };
 		9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92AC232C530500C2E339 /* Assets.xcassets */; };
 		9D6B92B0232C530500C2E339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92AE232C530500C2E339 /* LaunchScreen.storyboard */; };
-		9D6B92B8232C59C100C2E339 /* agendamento-png.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92B7232C59C100C2E339 /* agendamento-png.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42078B182368F719007AAEA0 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		420D2797232C6F6B00C50E43 /* lista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lista.png; path = AppAgendaContato/imgs/lista.png; sourceTree = SOURCE_ROOT; };
 		420D279B232D66E900C50E43 /* add-icon-614x460.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-icon-614x460.png"; path = "AppAgendaContato/imgs/add-icon-614x460.png"; sourceTree = SOURCE_ROOT; };
 		9D6B92A2232C530200C2E339 /* AppAgendaContato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAgendaContato.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,7 +29,6 @@
 		9D6B92AC232C530500C2E339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D6B92AF232C530500C2E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6B92B1232C530500C2E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D6B92B7232C59C100C2E339 /* agendamento-png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "agendamento-png.png"; path = "../../agendamento-png.png"; sourceTree = "<group>"; };
 		9D6B92BB232C71FD00C2E339 /* agendamento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = agendamento.png; path = AppAgendaContato/imgs/agendamento.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -72,13 +73,13 @@
 			isa = PBXGroup;
 			children = (
 				420D279A232C706F00C50E43 /* imgs */,
-				9D6B92B7232C59C100C2E339 /* agendamento-png.png */,
 				9D6B92A5232C530200C2E339 /* AppDelegate.swift */,
 				9D6B92A7232C530200C2E339 /* ViewController.swift */,
 				9D6B92A9232C530200C2E339 /* Main.storyboard */,
 				9D6B92AC232C530500C2E339 /* Assets.xcassets */,
 				9D6B92AE232C530500C2E339 /* LaunchScreen.storyboard */,
 				9D6B92B1232C530500C2E339 /* Info.plist */,
+				42078B172368F719007AAEA0 /* Database.xcdatamodeld */,
 			);
 			path = AppAgendaContato;
 			sourceTree = "<group>";
@@ -144,9 +145,9 @@
 				9D6B92B0232C530500C2E339 /* LaunchScreen.storyboard in Resources */,
 				9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */,
 				9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */,
-				9D6B92B8232C59C100C2E339 /* agendamento-png.png in Resources */,
 				420D279C232D66E900C50E43 /* add-icon-614x460.png in Resources */,
 				420D2798232C6F6C00C50E43 /* lista.png in Resources */,
+				42078B1B2369143F007AAEA0 /* agendamento.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D6B92A8232C530200C2E339 /* ViewController.swift in Sources */,
+				42078B192368F719007AAEA0 /* Database.xcdatamodeld in Sources */,
 				9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94MP2YPUBM;
+				DEVELOPMENT_TEAM = 36U8N4Y3JL;
 				INFOPLIST_FILE = AppAgendaContato/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94MP2YPUBM;
+				DEVELOPMENT_TEAM = 36U8N4Y3JL;
 				INFOPLIST_FILE = AppAgendaContato/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,6 +360,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42078B172368F719007AAEA0 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42078B182368F719007AAEA0 /* Database.xcdatamodel */,
+			);
+			currentVersion = 42078B182368F719007AAEA0 /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9D6B929A232C530200C2E339 /* Project object */;
 }
