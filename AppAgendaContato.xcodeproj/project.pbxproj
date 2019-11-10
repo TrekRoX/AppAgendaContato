@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42078B192368F719007AAEA0 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42078B172368F719007AAEA0 /* Database.xcdatamodeld */; };
+		42078B192368F719007AAEA0 /* AppAgendaContato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42078B172368F719007AAEA0 /* AppAgendaContato.xcdatamodeld */; };
 		42078B1B2369143F007AAEA0 /* agendamento.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92BB232C71FD00C2E339 /* agendamento.png */; };
 		420D2798232C6F6C00C50E43 /* lista.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D2797232C6F6B00C50E43 /* lista.png */; };
 		420D279C232D66E900C50E43 /* add-icon-614x460.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D279B232D66E900C50E43 /* add-icon-614x460.png */; };
+		9D5380EC2378967100C1A130 /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5380EB2378967100C1A130 /* NewUserController.swift */; };
 		9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B92A5232C530200C2E339 /* AppDelegate.swift */; };
 		9D6B92A8232C530200C2E339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B92A7232C530200C2E339 /* ViewController.swift */; };
 		9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92A9232C530200C2E339 /* Main.storyboard */; };
 		9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92AC232C530500C2E339 /* Assets.xcassets */; };
-		9D6B92B0232C530500C2E339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92AE232C530500C2E339 /* LaunchScreen.storyboard */; };
+		9D6F0CD423789CDF002EA55E /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CD323789CDF002EA55E /* Usuario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42078B182368F719007AAEA0 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		420D2797232C6F6B00C50E43 /* lista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lista.png; path = AppAgendaContato/imgs/lista.png; sourceTree = SOURCE_ROOT; };
 		420D279B232D66E900C50E43 /* add-icon-614x460.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-icon-614x460.png"; path = "AppAgendaContato/imgs/add-icon-614x460.png"; sourceTree = SOURCE_ROOT; };
+		9D5380EB2378967100C1A130 /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
 		9D6B92A2232C530200C2E339 /* AppAgendaContato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAgendaContato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6B92A5232C530200C2E339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D6B92A7232C530200C2E339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D6B92AA232C530200C2E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D6B92AC232C530500C2E339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D6B92AF232C530500C2E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6B92B1232C530500C2E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6B92BB232C71FD00C2E339 /* agendamento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = agendamento.png; path = AppAgendaContato/imgs/agendamento.png; sourceTree = SOURCE_ROOT; };
+		9D6F0CD323789CDF002EA55E /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,16 +74,25 @@
 		9D6B92A4232C530200C2E339 /* AppAgendaContato */ = {
 			isa = PBXGroup;
 			children = (
+				9D6F0CD223789CC7002EA55E /* Model */,
 				420D279A232C706F00C50E43 /* imgs */,
 				9D6B92A5232C530200C2E339 /* AppDelegate.swift */,
 				9D6B92A7232C530200C2E339 /* ViewController.swift */,
 				9D6B92A9232C530200C2E339 /* Main.storyboard */,
 				9D6B92AC232C530500C2E339 /* Assets.xcassets */,
-				9D6B92AE232C530500C2E339 /* LaunchScreen.storyboard */,
 				9D6B92B1232C530500C2E339 /* Info.plist */,
-				42078B172368F719007AAEA0 /* Database.xcdatamodeld */,
+				42078B172368F719007AAEA0 /* AppAgendaContato.xcdatamodeld */,
+				9D5380EB2378967100C1A130 /* NewUserController.swift */,
 			);
 			path = AppAgendaContato;
+			sourceTree = "<group>";
+		};
+		9D6F0CD223789CC7002EA55E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D6F0CD323789CDF002EA55E /* Usuario.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +153,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6B92B0232C530500C2E339 /* LaunchScreen.storyboard in Resources */,
 				9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */,
 				9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */,
 				420D279C232D66E900C50E43 /* add-icon-614x460.png in Resources */,
@@ -159,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D6B92A8232C530200C2E339 /* ViewController.swift in Sources */,
-				42078B192368F719007AAEA0 /* Database.xcdatamodeld in Sources */,
+				42078B192368F719007AAEA0 /* AppAgendaContato.xcdatamodeld in Sources */,
 				9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */,
+				9D6F0CD423789CDF002EA55E /* Usuario.swift in Sources */,
+				9D5380EC2378967100C1A130 /* NewUserController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,14 +185,6 @@
 				9D6B92AA232C530200C2E339 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9D6B92AE232C530500C2E339 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D6B92AF232C530500C2E339 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,13 +366,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		42078B172368F719007AAEA0 /* Database.xcdatamodeld */ = {
+		42078B172368F719007AAEA0 /* AppAgendaContato.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				42078B182368F719007AAEA0 /* Database.xcdatamodel */,
 			);
 			currentVersion = 42078B182368F719007AAEA0 /* Database.xcdatamodel */;
-			path = Database.xcdatamodeld;
+			path = AppAgendaContato.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
