@@ -17,6 +17,8 @@
 		9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92A9232C530200C2E339 /* Main.storyboard */; };
 		9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92AC232C530500C2E339 /* Assets.xcassets */; };
 		9D6F0CD423789CDF002EA55E /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CD323789CDF002EA55E /* Usuario.swift */; };
+		9D6F0CD8237A26A2002EA55E /* ContatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CD7237A26A2002EA55E /* ContatosViewController.swift */; };
+		9D6F0CDA237A2757002EA55E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		9D6B92B1232C530500C2E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6B92BB232C71FD00C2E339 /* agendamento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = agendamento.png; path = AppAgendaContato/imgs/agendamento.png; sourceTree = SOURCE_ROOT; };
 		9D6F0CD323789CDF002EA55E /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		9D6F0CD7237A26A2002EA55E /* ContatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosViewController.swift; sourceTree = "<group>"; };
+		9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				9D6B92B1232C530500C2E339 /* Info.plist */,
 				42078B172368F719007AAEA0 /* AppAgendaContato.xcdatamodeld */,
 				9D5380EB2378967100C1A130 /* NewUserController.swift */,
+				9D6F0CD7237A26A2002EA55E /* ContatosViewController.swift */,
+				9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */,
 			);
 			path = AppAgendaContato;
 			sourceTree = "<group>";
@@ -172,7 +178,9 @@
 				42078B192368F719007AAEA0 /* AppAgendaContato.xcdatamodeld in Sources */,
 				9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */,
 				9D6F0CD423789CDF002EA55E /* Usuario.swift in Sources */,
+				9D6F0CDA237A2757002EA55E /* TabBarViewController.swift in Sources */,
 				9D5380EC2378967100C1A130 /* NewUserController.swift in Sources */,
+				9D6F0CD8237A26A2002EA55E /* ContatosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
