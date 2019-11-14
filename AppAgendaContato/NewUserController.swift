@@ -20,32 +20,38 @@ class NewUserController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    
+    @IBAction func btnJaTenhoContaClick(_ sender: Any) {
+        self.dismiss(animated:true, completion: nil)
+    }
+    
     @IBAction func btnSalvarClick(_ sender: Any) {
         
         let email = txtEmail.text
         let senha = txtSenha.text
         if(email?.isEmpty)! || (senha?.isEmpty)!
         {
-            lblStatus.text = "Email ou Senha inválidos"
+            displayAlert(pMessage: "Email ou Senha inválidos")
         }
         else
         {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
+            
             //Verifica se usuario ja existe
             let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Usuario")
-            let predicate = NSPredicate(format: "email = %@", email!)
+            requisicao.predicate = NSPredicate(format: "email = %@", email!)
             
             do {
                 let usuarios = try context.fetch(requisicao)
                 
                 if usuarios.count > 0
                 {
-                    lblStatus.text = "Ja existe um usuario cadastrado com este email."
+                    displayAlert(pMessage: "Ja existe um usuario cadastrado com este email.")
                     return
                 }
             } catch  {
-                lblStatus.text = "Ocorreu um erro inesperado."
+                displayAlert(pMessage: "Ocorreu um erro inesperado ao cosultar usuarios ja cadastrados.")
                 return
             }
             
@@ -58,10 +64,31 @@ class NewUserController: UIViewController {
             
             do {
                 try context.save()
-                lblStatus.text = "Usuario inserido com sucesso."
-            } catch  {
-               lblStatus.text = "Ocorreu um erro inesperado."
+            } catch let error as NSError  {
+                print ("Erro: " + error.localizedDescription)
+                displayAlert(pMessage: "Ocorreu um erro inesperado ao salvar o usuário.")
+                return
             }
+            
+            let alert = UIAlertController(title: "Alerta", message: "Sucesso", preferredStyle: UIAlertController.Style.alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default){ action in
+                self.dismiss(animated:true, completion: nil)
+            }
+            
+            alert.addAction(okAction)
+            
+            self.present(alert, animated:true, completion: nil);
         }
+    }
+    
+    func displayAlert(pMessage:String){
+        let alert = UIAlertController(title: "Alerta", message: pMessage, preferredStyle: UIAlertController.Style.alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil)
+        
+        alert.addAction(okAction)
+        
+        self.present(alert, animated:true, completion: nil);
     }
 }

@@ -13,12 +13,12 @@
 		420D279C232D66E900C50E43 /* add-icon-614x460.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D279B232D66E900C50E43 /* add-icon-614x460.png */; };
 		9D5380EC2378967100C1A130 /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5380EB2378967100C1A130 /* NewUserController.swift */; };
 		9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B92A5232C530200C2E339 /* AppDelegate.swift */; };
-		9D6B92A8232C530200C2E339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B92A7232C530200C2E339 /* ViewController.swift */; };
 		9D6B92AB232C530200C2E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92A9232C530200C2E339 /* Main.storyboard */; };
 		9D6B92AD232C530500C2E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92AC232C530500C2E339 /* Assets.xcassets */; };
 		9D6F0CD423789CDF002EA55E /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CD323789CDF002EA55E /* Usuario.swift */; };
 		9D6F0CD8237A26A2002EA55E /* ContatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CD7237A26A2002EA55E /* ContatosViewController.swift */; };
 		9D6F0CDA237A2757002EA55E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */; };
+		9D6F0CDC237CD961002EA55E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CDB237CD961002EA55E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,6 @@
 		9D5380EB2378967100C1A130 /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
 		9D6B92A2232C530200C2E339 /* AppAgendaContato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAgendaContato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6B92A5232C530200C2E339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D6B92A7232C530200C2E339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D6B92AA232C530200C2E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D6B92AC232C530500C2E339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D6B92B1232C530500C2E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		9D6F0CD323789CDF002EA55E /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		9D6F0CD7237A26A2002EA55E /* ContatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosViewController.swift; sourceTree = "<group>"; };
 		9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9D6F0CDB237CD961002EA55E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,6 @@
 				9D6F0CD223789CC7002EA55E /* Model */,
 				420D279A232C706F00C50E43 /* imgs */,
 				9D6B92A5232C530200C2E339 /* AppDelegate.swift */,
-				9D6B92A7232C530200C2E339 /* ViewController.swift */,
 				9D6B92A9232C530200C2E339 /* Main.storyboard */,
 				9D6B92AC232C530500C2E339 /* Assets.xcassets */,
 				9D6B92B1232C530500C2E339 /* Info.plist */,
@@ -89,6 +88,7 @@
 				9D5380EB2378967100C1A130 /* NewUserController.swift */,
 				9D6F0CD7237A26A2002EA55E /* ContatosViewController.swift */,
 				9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */,
+				9D6F0CDB237CD961002EA55E /* LoginViewController.swift */,
 			);
 			path = AppAgendaContato;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6B92A8232C530200C2E339 /* ViewController.swift in Sources */,
+				9D6F0CDC237CD961002EA55E /* LoginViewController.swift in Sources */,
 				42078B192368F719007AAEA0 /* AppAgendaContato.xcdatamodeld in Sources */,
 				9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */,
 				9D6F0CD423789CDF002EA55E /* Usuario.swift in Sources */,
