@@ -14,6 +14,9 @@ class ContatosViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let logado = UserDefaults.standard.value(forKey: "usrEmail") as? String {
+            print("Logado como " + logado)
+        }
     }
     
 
