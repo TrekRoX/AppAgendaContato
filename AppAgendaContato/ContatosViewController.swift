@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class ContatosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var lstContatos: [String] = []
+    var lstContatos: [Contatos] = []
     
     @IBOutlet weak var tableViewContatos: UITableView!
     
@@ -41,17 +42,38 @@ class ContatosViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContatoCell", for: indexPath)
         
-        cell.textLabel!.text = lstContatos[indexPath.row]
+        cell.textLabel!.text = lstContatos[indexPath.row].nome
+        
         return cell
     }
     
     func carregaContatos(){
-        var lst = ["Teste1", "Teste2", "Teste 3", "Teste 4", "Teste 5"]
+        //var lst = ["Teste1", "Teste2", "Teste 3", "Teste 4", "Teste 5"]
+        //for item in lst {
+        //    lstContatos.append(item)
+        //}
         
-        for item in lst {
-            lstContatos.append(item)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Contato")
+        
+        do{
+            let results = try context.fetch(fetchRequest)
+            //lstContatos = results as! [Contatos]
+            
+            if results.count > 0
+            {
+                for item in results{
+                    print(item)
+                    //lstContatos.append(item)
+                }
+            }
+            
         }
-        
+        catch{
+            fatalError("Erro ao retornar contatos")
+        }
         
     }
     

@@ -4,6 +4,7 @@
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telefone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userLogado" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
@@ -16,6 +17,6 @@
     </entity>
     <elements>
         <element name="Usuario" positionX="-147.9765625" positionY="-180.1015625" width="128" height="75"/>
-        <element name="Contato" positionX="-99" positionY="-117" width="128" height="90"/>
+        <element name="Contato" positionX="-99" positionY="-117" width="128" height="105"/>
     </elements>
 </model>

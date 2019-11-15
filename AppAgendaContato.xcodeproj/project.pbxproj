@@ -10,6 +10,7 @@
 		42078B192368F719007AAEA0 /* AppAgendaContato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42078B172368F719007AAEA0 /* AppAgendaContato.xcdatamodeld */; };
 		42078B1B2369143F007AAEA0 /* agendamento.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B92BB232C71FD00C2E339 /* agendamento.png */; };
 		42078B25237F1D4C007AAEA0 /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42078B24237F1D4C007AAEA0 /* NewContactViewController.swift */; };
+		42078B29237F45A8007AAEA0 /* Contatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42078B28237F45A8007AAEA0 /* Contatos.swift */; };
 		420D2798232C6F6C00C50E43 /* lista.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D2797232C6F6B00C50E43 /* lista.png */; };
 		420D279C232D66E900C50E43 /* add-icon-614x460.png in Resources */ = {isa = PBXBuildFile; fileRef = 420D279B232D66E900C50E43 /* add-icon-614x460.png */; };
 		9D5380EC2378967100C1A130 /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5380EB2378967100C1A130 /* NewUserController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		42078B182368F719007AAEA0 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		42078B24237F1D4C007AAEA0 /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
+		42078B28237F45A8007AAEA0 /* Contatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contatos.swift; sourceTree = "<group>"; };
 		420D2797232C6F6B00C50E43 /* lista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lista.png; path = AppAgendaContato/imgs/lista.png; sourceTree = SOURCE_ROOT; };
 		420D279B232D66E900C50E43 /* add-icon-614x460.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-icon-614x460.png"; path = "AppAgendaContato/imgs/add-icon-614x460.png"; sourceTree = SOURCE_ROOT; };
 		9D5380EB2378967100C1A130 /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9D6F0CD323789CDF002EA55E /* Usuario.swift */,
+				42078B28237F45A8007AAEA0 /* Contatos.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42078B29237F45A8007AAEA0 /* Contatos.swift in Sources */,
 				9D6F0CDC237CD961002EA55E /* LoginViewController.swift in Sources */,
 				42078B192368F719007AAEA0 /* AppAgendaContato.xcdatamodeld in Sources */,
 				9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */,
