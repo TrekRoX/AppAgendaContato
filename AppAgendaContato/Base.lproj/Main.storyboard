@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mhR-dG-XKz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mhR-dG-XKz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -185,47 +185,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5md-FY-MBh">
-                                <rect key="frame" x="0.0" y="164" width="375" height="503"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XTS-tw-kxM" detailTextLabel="6hG-Z7-sKb" style="IBUITableViewCellStyleValue1" id="H1m-vx-tT4">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H1m-vx-tT4" id="Mh9-Hp-jyO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nome Contato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XTS-tw-kxM">
-                                                    <rect key="frame" x="15" y="12" width="111.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detalhes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6hG-Z7-sKb">
-                                                    <rect key="frame" x="292.5" y="12" width="67.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="DtO-0w-aQV" kind="show" id="G2u-vy-tvy"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <searchBar contentMode="redraw" placeholder="Buscar" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-tf-SoA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                            </searchBar>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-WD-xoh">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
@@ -238,31 +197,51 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RU9-oC-K9d">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContatoCell" id="I7S-jB-L1l">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I7S-jB-L1l" id="94j-jN-33e">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5md-FY-MBh" firstAttribute="top" secondItem="5CP-tf-SoA" secondAttribute="bottom" id="2u9-sm-5jc"/>
-                            <constraint firstItem="5CP-tf-SoA" firstAttribute="leading" secondItem="wpN-nF-1mI" secondAttribute="leading" id="3tf-Lq-ut6"/>
-                            <constraint firstItem="5CP-tf-SoA" firstAttribute="top" secondItem="DaS-WD-xoh" secondAttribute="bottom" id="8cW-Lq-9Xn"/>
-                            <constraint firstItem="5md-FY-MBh" firstAttribute="trailing" secondItem="wpN-nF-1mI" secondAttribute="trailing" id="R7b-G1-QZo"/>
-                            <constraint firstItem="5CP-tf-SoA" firstAttribute="trailing" secondItem="wpN-nF-1mI" secondAttribute="trailing" id="fEd-oh-bQ3"/>
+                            <constraint firstItem="RU9-oC-K9d" firstAttribute="leading" secondItem="DaS-WD-xoh" secondAttribute="leading" id="1pv-eD-af2"/>
+                            <constraint firstItem="RU9-oC-K9d" firstAttribute="leading" secondItem="wpN-nF-1mI" secondAttribute="leading" id="6l0-h7-rpn"/>
+                            <constraint firstItem="RU9-oC-K9d" firstAttribute="trailing" secondItem="wpN-nF-1mI" secondAttribute="trailing" id="Ecg-MR-piY"/>
+                            <constraint firstItem="RU9-oC-K9d" firstAttribute="trailing" secondItem="DaS-WD-xoh" secondAttribute="trailing" id="Sny-PE-Yic"/>
+                            <constraint firstItem="RU9-oC-K9d" firstAttribute="top" secondItem="DaS-WD-xoh" secondAttribute="bottom" id="T0O-qm-fYM"/>
+                            <constraint firstItem="RU9-oC-K9d" firstAttribute="bottom" secondItem="wpN-nF-1mI" secondAttribute="bottom" id="fE4-EB-UsY"/>
                             <constraint firstItem="DaS-WD-xoh" firstAttribute="leading" secondItem="wpN-nF-1mI" secondAttribute="leading" id="fb3-2W-E1l"/>
+                            <constraint firstItem="RU9-oC-K9d" firstAttribute="top" secondItem="DaS-WD-xoh" secondAttribute="bottom" id="jrO-qu-2O7"/>
                             <constraint firstItem="DaS-WD-xoh" firstAttribute="trailing" secondItem="wpN-nF-1mI" secondAttribute="trailing" id="kSf-5P-hGw"/>
-                            <constraint firstItem="5md-FY-MBh" firstAttribute="leading" secondItem="wpN-nF-1mI" secondAttribute="leading" id="ttL-6U-he8"/>
                             <constraint firstItem="DaS-WD-xoh" firstAttribute="top" secondItem="wpN-nF-1mI" secondAttribute="top" id="uhn-v4-TuY"/>
+                            <constraint firstItem="RU9-oC-K9d" firstAttribute="bottom" secondItem="wpN-nF-1mI" secondAttribute="bottom" id="yeq-ot-R0E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wpN-nF-1mI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contatos" id="Zws-RR-J0U"/>
+                    <navigationItem key="navigationItem" id="AkB-ky-Etu"/>
+                    <connections>
+                        <outlet property="tableViewContatos" destination="RU9-oC-K9d" id="EsW-Yn-czw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oew-qu-Lfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3194" y="-224"/>
+            <point key="canvasLocation" x="3192.8000000000002" y="-224.4377811094453"/>
         </scene>
         <!--Cad Contato-->
         <scene sceneID="qZo-6Y-UcR">
             <objects>
-                <viewController title="Cad Contato" id="DtO-0w-aQV" sceneMemberID="viewController">
+                <viewController title="Cad Contato" id="DtO-0w-aQV" customClass="NewContactViewController" customModule="AppAgendaContato" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EJw-Lj-54H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,6 +303,25 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24N-3D-PUg">
+                                <rect key="frame" x="26" y="331" width="323" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.086851200160000003" green="0.33223410889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Salvar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSalvarContatoClick:" destination="DtO-0w-aQV" eventType="touchUpInside" id="0Cb-EF-ddR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6X-yO-63Q">
+                                <rect key="frame" x="26" y="385" width="323" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancelar"/>
+                                <connections>
+                                    <action selector="btnCancelarClick:" destination="DtO-0w-aQV" eventType="touchUpInside" id="ZYV-3M-6rI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -348,10 +346,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tbD-AC-294"/>
                     </view>
+                    <connections>
+                        <outlet property="txtContactEmail" destination="oC9-oj-Oxm" id="cBR-dm-SVa"/>
+                        <outlet property="txtContactFone" destination="ZI2-0I-A4K" id="c08-dv-TTO"/>
+                        <outlet property="txtContactName" destination="vv0-Ou-DgJ" id="31u-dG-wyt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i3L-Qs-2Lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4142" y="-224"/>
+            <point key="canvasLocation" x="4141.6000000000004" y="-224.4377811094453"/>
         </scene>
         <!--Principal-->
         <scene sceneID="lKk-Iu-7ln">
@@ -556,7 +559,4 @@
     <resources>
         <image name="agendamento.png" width="303" height="341"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Mza-aW-Zj0"/>
-    </inferredMetricsTieBreakers>
 </document>

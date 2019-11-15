@@ -51,7 +51,7 @@ class NewUserController: UIViewController {
                     return
                 }
             } catch  {
-                displayAlert(pMessage: "Ocorreu um erro inesperado ao cosultar usuarios ja cadastrados.")
+                displayAlert(pMessage: "Ocorreu um erro inesperado ao consultar usuarios ja cadastrados.")
                 return
             }
             

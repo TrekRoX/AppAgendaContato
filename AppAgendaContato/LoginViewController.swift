@@ -52,7 +52,7 @@ class LoginViewController: UIViewController {
                 }
             }
         } catch  {
-            displayAlert(pMessage: "Ocorreu um erro inesperado ao cosultar usuarios ja cadastrados.")
+            displayAlert(pMessage: "Ocorreu um erro inesperado ao consultar usuarios ja cadastrados.")
             return false
         }
         return false
