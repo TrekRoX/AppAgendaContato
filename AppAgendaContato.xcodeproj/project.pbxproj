@@ -89,10 +89,10 @@
 				9D6B92AC232C530500C2E339 /* Assets.xcassets */,
 				9D6B92B1232C530500C2E339 /* Info.plist */,
 				42078B172368F719007AAEA0 /* AppAgendaContato.xcdatamodeld */,
-				9D5380EB2378967100C1A130 /* NewUserController.swift */,
-				9D6F0CD7237A26A2002EA55E /* ContatosViewController.swift */,
 				9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */,
+				9D6F0CD7237A26A2002EA55E /* ContatosViewController.swift */,
 				9D6F0CDB237CD961002EA55E /* LoginViewController.swift */,
+				9D5380EB2378967100C1A130 /* NewUserController.swift */,
 				42078B24237F1D4C007AAEA0 /* NewContactViewController.swift */,
 			);
 			path = AppAgendaContato;

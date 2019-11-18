@@ -11,7 +11,7 @@ import CoreData
 
 class ContatosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var lstContatos: [Contatos] = []
+    var lstContatos: [String] = []
     
     @IBOutlet weak var tableViewContatos: UITableView!
     
@@ -42,7 +42,7 @@ class ContatosViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContatoCell", for: indexPath)
         
-        cell.textLabel!.text = lstContatos[indexPath.row].nome
+        cell.textLabel!.text = lstContatos[indexPath.row]
         
         return cell
     }
@@ -60,13 +60,13 @@ class ContatosViewController: UIViewController, UITableViewDelegate, UITableView
         
         do{
             let results = try context.fetch(fetchRequest)
-            //lstContatos = results as! [Contatos]
             
             if results.count > 0
             {
-                for item in results{
-                    print(item)
-                    //lstContatos.append(item)
+                for item in results as! [NSManagedObject] {
+                    print((item as AnyObject).value(forKey: "nome") ?? "Sem Nome")
+                    lstContatos.append((item as AnyObject).value(forKey: "nome") as! String)
+                    //lstContatos.append(item.value(forKey: "nome") as! String)
                 }
             }
             

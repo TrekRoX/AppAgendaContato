@@ -30,8 +30,13 @@ class NewContactViewController: UIViewController {
         let nome = txtContactName.text
         let email = txtContactEmail.text
         let telefone = txtContactFone.text
+        let usuarioLogado = UserDefaults.standard.value(forKey: "usrEmail") as? String
         
-        if (nome?.isEmpty)!
+        if (usuarioLogado?.isEmpty)! {
+            displayAlert(pMessage: "Erro, você não está logado")
+            return
+        }
+        else if (nome?.isEmpty)!
         {
             displayAlert(pMessage: "Campo de nome não pode ser vazio")
             return
@@ -61,6 +66,7 @@ class NewContactViewController: UIViewController {
             
             // Inserindo novo Contato
             let newContato = NSEntityDescription.insertNewObject(forEntityName: "Contato", into: context)
+            newContato.setValue(usuarioLogado, forKey: "userLogado")
             newContato.setValue(nome, forKey: "nome")
             newContato.setValue(email, forKey: "email")
             newContato.setValue(telefone, forKey: "telefone")
