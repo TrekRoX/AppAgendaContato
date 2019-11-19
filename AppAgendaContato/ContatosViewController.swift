@@ -11,7 +11,9 @@ import CoreData
 
 class ContatosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var lstContatos: [String] = []
+    var lstContatos:[String] = []
+    
+    var usuarioLogado:String = ""
     
     @IBOutlet weak var tableViewContatos: UITableView!
     
@@ -22,13 +24,17 @@ class ContatosViewController: UIViewController, UITableViewDelegate, UITableView
         if let logado = UserDefaults.standard.value(forKey: "usrEmail") as? String {
             print("Logado como " + logado)
             
+            usuarioLogado = logado
+            
             tableViewContatos.dataSource = self
             tableViewContatos.delegate = self
-            
-            carregaContatos()
         }
     
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        carregaContatos()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -48,15 +54,17 @@ class ContatosViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func carregaContatos(){
-        //var lst = ["Teste1", "Teste2", "Teste 3", "Teste 4", "Teste 5"]
-        //for item in lst {
-        //    lstContatos.append(item)
-        //}
+        lstContatos.removeAll()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Contato")
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
+        
+        if (usuarioLogado != "") {
+            fetchRequest.predicate = NSPredicate(format: "userLogado == %@", usuarioLogado)
+        }
         
         do{
             let results = try context.fetch(fetchRequest)
@@ -64,10 +72,12 @@ class ContatosViewController: UIViewController, UITableViewDelegate, UITableView
             if results.count > 0
             {
                 for item in results as! [NSManagedObject] {
-                    print((item as AnyObject).value(forKey: "nome") ?? "Sem Nome")
+                    //print((item as AnyObject).value(forKey: "nome") ?? "Sem Nome")
+                    
                     lstContatos.append((item as AnyObject).value(forKey: "nome") as! String)
                     //lstContatos.append(item.value(forKey: "nome") as! String)
                 }
+                tableViewContatos.reloadData()
             }
             
         }
