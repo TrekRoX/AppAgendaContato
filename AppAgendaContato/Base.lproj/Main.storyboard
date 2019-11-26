@@ -541,6 +541,8 @@
                         <viewLayoutGuide key="safeArea" id="dSu-hM-qnJ"/>
                     </view>
                     <connections>
+                        <outlet property="contatoPicker" destination="W4t-dt-Z7s" id="dcV-Y8-FxQ"/>
+                        <outlet property="dataPicker" destination="6Ic-rF-W86" id="YiN-Wj-d1b"/>
                         <outlet property="txtDescricao" destination="7QW-Ew-kJC" id="xzF-PY-q7J"/>
                     </connections>
                 </viewController>
