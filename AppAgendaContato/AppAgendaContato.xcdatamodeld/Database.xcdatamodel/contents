@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G7024" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Agendamento" representedClassName="Agendamento" syncable="YES" codeGenerationType="class">
+        <attribute name="data" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usuario" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Contato" representedClassName="Contato" syncable="YES" codeGenerationType="class">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
@@ -16,7 +21,8 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="Usuario" positionX="-147.9765625" positionY="-180.1015625" width="128" height="75"/>
         <element name="Contato" positionX="-99" positionY="-117" width="128" height="105"/>
+        <element name="Usuario" positionX="-147.9765625" positionY="-180.1015625" width="128" height="75"/>
+        <element name="Agendamento" positionX="-126" positionY="-117" width="128" height="90"/>
     </elements>
 </model>

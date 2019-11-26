@@ -21,7 +21,6 @@ class NewContactViewController: UIViewController {
     }
     
     @IBAction func btnCancelarClick(_ sender: Any) {
-        print("Fechando")
         self.dismiss(animated:true, completion: nil)
     }
     
