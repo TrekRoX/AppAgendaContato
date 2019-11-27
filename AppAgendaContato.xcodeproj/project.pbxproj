@@ -22,6 +22,7 @@
 		9D6F0CDA237A2757002EA55E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */; };
 		9D6F0CDC237CD961002EA55E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0CDB237CD961002EA55E /* LoginViewController.swift */; };
 		9DE94366238CA171004B38FD /* NewAgendamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE94365238CA171004B38FD /* NewAgendamentoViewController.swift */; };
+		9DE94368238F2DAB004B38FD /* AgendamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE94367238F2DAB004B38FD /* AgendamentoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9D6F0CD9237A2757002EA55E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		9D6F0CDB237CD961002EA55E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9DE94365238CA171004B38FD /* NewAgendamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAgendamentoViewController.swift; sourceTree = "<group>"; };
+		9DE94367238F2DAB004B38FD /* AgendamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendamentoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				9D5380EB2378967100C1A130 /* NewUserController.swift */,
 				42078B24237F1D4C007AAEA0 /* NewContactViewController.swift */,
 				9DE94365238CA171004B38FD /* NewAgendamentoViewController.swift */,
+				9DE94367238F2DAB004B38FD /* AgendamentoViewController.swift */,
 			);
 			path = AppAgendaContato;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				42078B29237F45A8007AAEA0 /* Contatos.swift in Sources */,
 				9D6F0CDC237CD961002EA55E /* LoginViewController.swift in Sources */,
 				42078B192368F719007AAEA0 /* AppAgendaContato.xcdatamodeld in Sources */,
+				9DE94368238F2DAB004B38FD /* AgendamentoViewController.swift in Sources */,
 				9D6B92A6232C530200C2E339 /* AppDelegate.swift in Sources */,
 				9D6F0CD423789CDF002EA55E /* Usuario.swift in Sources */,
 				9D6F0CDA237A2757002EA55E /* TabBarViewController.swift in Sources */,
