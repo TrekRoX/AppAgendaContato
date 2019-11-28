@@ -378,41 +378,11 @@
         <!--Agendamentos-->
         <scene sceneID="PGk-BG-FrJ">
             <objects>
-                <viewController title="Agendamentos" id="Wuu-vJ-CAg" sceneMemberID="viewController">
+                <viewController title="Agendamentos" id="Wuu-vJ-CAg" customClass="AgendamentoViewController" customModule="AppAgendaContato" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F90-LT-YyZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fXN-eL-CaK">
-                                <rect key="frame" x="0.0" y="134" width="375" height="533"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="gxz-jh-jCL" detailTextLabel="Skp-W7-GPi" rowHeight="72" style="IBUITableViewCellStyleValue1" id="wnI-eU-fE8">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="72"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wnI-eU-fE8" id="wbX-ts-ALG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Contato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gxz-jh-jCL">
-                                                    <rect key="frame" x="15" y="26" width="61.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detalhes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Skp-W7-GPi">
-                                                    <rect key="frame" x="292.5" y="26" width="67.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaS-tB-poW">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
@@ -432,18 +402,49 @@
                                     <!--2019-09-19 02:36:49 +0000-->
                                 </date>
                             </datePicker>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L1I-pF-S8i">
+                                <rect key="frame" x="0.0" y="134" width="375" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AgendamentoCell" id="yLj-0B-f4b">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yLj-0B-f4b" id="Diq-Lj-s9p">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d76-MM-TML">
+                                <rect key="frame" x="16" y="574" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.086851200160000003" green="0.33223410889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Buscar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSalvarClick:" destination="GNI-JB-tk4" eventType="touchUpInside" id="bCt-BF-AdL"/>
+                                    <action selector="btnSalvarContatoClick:" destination="DtO-0w-aQV" eventType="touchUpInside" id="RiP-nV-6qo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="dXI-2P-mjo" firstAttribute="trailing" secondItem="d76-MM-TML" secondAttribute="trailing" constant="16" id="21C-Ry-JHj"/>
                             <constraint firstItem="EaS-tB-poW" firstAttribute="trailing" secondItem="dXI-2P-mjo" secondAttribute="trailing" id="6Db-EW-kyo"/>
-                            <constraint firstItem="fXN-eL-CaK" firstAttribute="leading" secondItem="dXI-2P-mjo" secondAttribute="leading" id="CGb-vu-n6N"/>
                             <constraint firstItem="EaS-tB-poW" firstAttribute="top" secondItem="dXI-2P-mjo" secondAttribute="top" id="NDU-Fg-QUI"/>
-                            <constraint firstItem="fXN-eL-CaK" firstAttribute="trailing" secondItem="dXI-2P-mjo" secondAttribute="trailing" id="Tg4-Ie-4o5"/>
                             <constraint firstItem="EaS-tB-poW" firstAttribute="leading" secondItem="dXI-2P-mjo" secondAttribute="leading" id="phF-c1-jyp"/>
+                            <constraint firstItem="dXI-2P-mjo" firstAttribute="bottom" secondItem="d76-MM-TML" secondAttribute="bottom" constant="14" id="xjg-p4-v9d"/>
+                            <constraint firstItem="d76-MM-TML" firstAttribute="leading" secondItem="dXI-2P-mjo" secondAttribute="leading" constant="16" id="zDW-fV-jHx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dXI-2P-mjo"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Agendamentos" id="IKv-oG-FmL"/>
+                    <connections>
+                        <outlet property="datePicker" destination="7hg-S2-45l" id="OrF-d3-EeN"/>
+                        <outlet property="tblAgendamento" destination="L1I-pF-S8i" id="hwf-Uh-l72"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0k-fd-wS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -524,7 +525,7 @@
                                     <action selector="btnCancelarClick:" destination="GNI-JB-tk4" eventType="touchUpInside" id="KOK-iW-vgf"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Ic-rF-W86">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Ic-rF-W86">
                                 <rect key="frame" x="0.0" y="242" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="596422934.09028006">

@@ -22,12 +22,13 @@ class NewAgendamentoViewController: UIViewController, UIPickerViewDelegate, UIPi
         
     }
     func carregaContatos() {
-        
+        let usrEmail = UserDefaults.standard.value(forKey: "usrEmail") as? String
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Contato")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
+        fetchRequest.predicate = NSPredicate(format: "userLogado == %@", usrEmail!)
         
         do{
             let results = try context.fetch(fetchRequest)

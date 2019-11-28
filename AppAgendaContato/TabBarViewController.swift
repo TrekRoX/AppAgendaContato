@@ -19,7 +19,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidAppear(_ animated: Bool) {
         //Verificando se alguem esta logado, do contrario redireciona para login
         if let logado = UserDefaults.standard.value(forKey: "usrEmail") as? String {
-            print("Logado como " + logado)
+            //print("Logado como " + logado)
         }
         else {
             self.performSegue(withIdentifier: "loginView", sender: self)

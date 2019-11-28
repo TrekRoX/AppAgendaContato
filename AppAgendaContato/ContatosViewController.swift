@@ -22,7 +22,7 @@ class ContatosViewController: UIViewController, UITableViewDelegate, UITableView
 
         // Do any additional setup after loading the view.
         if let logado = UserDefaults.standard.value(forKey: "usrEmail") as? String {
-            print("Logado como " + logado)
+            //print("Logado como " + logado)
             
             usuarioLogado = logado
             
