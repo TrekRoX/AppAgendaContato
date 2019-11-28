@@ -33,29 +33,23 @@ class AgendamentoViewController: UIViewController, UITableViewDelegate, UITableV
         let context = appDelegate.persistentContainer.viewContext
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Agendamento")
-        //fetchRequest.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
-        //fetchRequest.predicate = NSPredicate(format: "usuario == %@", usrEmail!)
-        //fetchRequest.predicate = NSPredicate(format: "data > %@", dtAgendamentos as NSDate)
+        //Usuario logado
+        let usrEmailPredicate = NSPredicate(format: "usuario == %@", usrEmail!)
         
-        // Get the current calendar with local time zone
+        // Pega calendario com data atual
         var calendar = Calendar.current
         calendar.timeZone = NSTimeZone.local
         
-        // Get today's beginning & end
-        let dateFrom = calendar.startOfDay(for: dtAgendamentos) // eg. 2016-10-10 00:00:00
+        // Cria a data inicial a partir do datepicker porem com horario zerado
+        let dateFrom = calendar.startOfDay(for: dtAgendamentos) // 00:00:00
         let dateTo = calendar.date(byAdding: .day, value: 1, to: dateFrom)
         
-        // Set predicate as date being today's date
+        // Dois predicates de até
         let fromPredicate = NSPredicate(format: "data >= %@", dateFrom as NSDate)
         let toPredicate = NSPredicate(format: "data < %@", dateTo! as NSDate)
-        let datePredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [fromPredicate, toPredicate])
-        fetchRequest.predicate = datePredicate
+        let composicao = NSCompoundPredicate(andPredicateWithSubpredicates: [fromPredicate, toPredicate, usrEmailPredicate])
         
-        //let predicate1 = NSPredicate(format: "idade >= %@", "25")
-        //let predicate2 = NSPredicate(format: "nome contains [c] %@", "Maria")
-        //let composicao = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate1, predicate2])
-        //requisicao.predicate = composicao
-        
+        fetchRequest.predicate = composicao
         
         do{
             let results = try context.fetch(fetchRequest)
@@ -99,4 +93,8 @@ class AgendamentoViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
 
+    @IBAction func btnBuscarClick(_ sender: Any) {
+        carregaAgendamentos()
+        tblAgendamento.reloadData()
+    }
 }
